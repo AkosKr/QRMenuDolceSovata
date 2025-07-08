@@ -1,6 +1,7 @@
 import "./style.css";
 import { renderMenu } from './coffee.ts';
 import { renderDrinkMenu } from './drinks.ts';
+import { renderHotDrinkMenu } from './hotdrinks.ts';
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div class='MainFrame'>
@@ -34,11 +35,25 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div class="flex flex-col items-center w-full text-center">
           <p class="font-bold text-[24px] text-center"> Hot Drinks </p>
         </div>
-
+        <div id="hotDrinkMenu"></div>
       </div>
       <div>
         <div class="flex flex-col items-center w-full text-center">
           <p class="font-bold text-[24px] text-center"> Opening Hours </p>
+        </div>
+        <div>
+          <p class="font-semibold text-[16px]"> Monday - Sunday </p>
+          <p class="font-semibold text-[16px]"> 10:00 - 21:00 </p>
+        </div>
+      </div>
+      <div>
+        <div class="flex flex-col items-center w-full text-center">
+          <p class="font-bold text-[24px] text-center"> Allergens </p>
+        </div>
+        <div>
+          <p class="font-semibold text-[16px]"> Contains milk  </p>
+          <p class="font-semibold text-[16px]"> Ice cream may contain allergens 
+depending on the flavor </p>
         </div>
       </div>
     </div>
@@ -47,5 +62,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
 renderMenu("menu");
 renderDrinkMenu("drinkMenu");
+renderHotDrinkMenu("hotDrinkMenu");
 
 
