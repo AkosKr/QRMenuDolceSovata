@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("EBBucketUtils",[],(function(a,b,c,d,e,f){"use strict";function a(a,b,c){b===void 0&&(b=100);c===void 0&&(c=5);if(a===0)return"zero";if(a<0)return"negative";if(c<=0)return"invalidIncrement";if(a>b)return"greaterThanLimit";a=Math.floor((a-1)/c)*c+1;c=Math.min(a+c-1,b);return a+"-"+c}f.getBucketName=a}),66);
+__d("LSQplAnnotateInt.nop",["EBMarkerIdToQPLEvent","I64","Promise","QPLUserFlow","WAHashStringToNumber","nullthrows"],(function(a,b,c,d,e,f,g){"use strict";var h,i;a=function(a,e,f,g,j,k){try{a=c("nullthrows")(d("EBMarkerIdToQPLEvent").markerIdToQPLEvent(f));e=d("WAHashStringToNumber").hashStringToNumber(g);c("QPLUserFlow").addAnnotations(a,{"int":(f={},f[j]=(i||(i=d("I64"))).to_int32(k),f)},{instanceKey:e});return(h||(h=b("Promise"))).resolve()}catch(a){return(h||(h=b("Promise"))).resolve()}};a.__nop_name__="LSQplAnnotateInt";g["default"]=a}),98);

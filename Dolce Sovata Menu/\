@@ -1,0 +1,23 @@
+import './style.css'
+import { setupCounter } from './counter.ts'
+
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+  <div class='MainFrame'>
+    <div class='TopChocolateTexture'></div>
+    <div class='MainContentHolder'>
+      <div class="flex flex-col relative min-h-18">
+        <div class="separator"> MENU </div>
+        <p class="text-center text-[20px] font-bold absolute bottom-0 left-0"> Dolce Sovata </p>
+      </div>
+      <div class="IceCreamSelectionHolder">
+        <p class="font-bold"> ICE CREAM </p>
+        <div class="flex flex-row w-full">
+          <p class="w-1/2 text-left text-[14px] font-medium pl-4"> Daily Selection </p>
+          <p class="w-1/2 text-right text-[14px] font-medium pr-4"> 8 RON / 80 gr. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+`
+
+setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
