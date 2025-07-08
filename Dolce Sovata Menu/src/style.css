@@ -116,7 +116,7 @@ hr {
 .TopChocolateTexture {
   margin: 0;
   padding: 0;
-  height: 20%;
+  height: 40%;
   width: 100vw;
   background-image: url("ChocolateTransTexture.png");
   background-size: 100% 100%;
@@ -148,12 +148,12 @@ hr {
   border-bottom: 3px solid #000
 }
 
-.separator::before{
+.separator:not(:empty):before{
   margin-right: .5em;
   margin-left: .5em
 }
 
-.separator::after{
+.separator:not(:empty)::after{
   margin-left: .5em;
   margin-right: .5em
 }

@@ -1,7 +1,7 @@
-const items: { name: string; price: string }[] = [
-{ name: "Hot Chocolate (Milk)", price: "12 RON / 250 ml" },
-{ name: "Hot Chocolate (Dark)", price: "12 RON / 250 ml" },
-{ name: "Tea", price: "8 RON / 250 ml" },
+const items: { name: string; price: string; milk: boolean }[] = [
+{ name: "Hot Chocolate (Milk)", price: "12 RON / 250 ml", milk: true },
+{ name: "Hot Chocolate (Dark)", price: "12 RON / 250 ml", milk: true },
+{ name: "Tea", price: "8 RON / 250 ml", milk: false },
 ];
 
 export function renderHotDrinkMenu(containerId: string) {
@@ -20,6 +20,13 @@ items.forEach(item => {
   price.textContent = item.price;
 
   wrapper.appendChild(name);
+
+  if (item.milk === true) {
+      const milk = document.createElement("span");
+      milk.textContent = "🥛";
+      wrapper.appendChild(milk);
+  } 
+
   wrapper.appendChild(price);
   container.appendChild(wrapper);
 });

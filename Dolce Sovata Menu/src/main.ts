@@ -14,8 +14,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       <div>
         <p class="font-bold text-[24px]"> Ice cream </p>
         <div class="flex flex-row w-full">
-          <p class="w-1/2 text-left text-[16px] font-medium pl-4"> Daily Selection </p>
-          <p class="w-1/2 text-right text-[14px] font-medium pr-4"> 8 RON / 80 gr. </p>
+          <p class="w-1/2 text-left text-[16px] font-semibold pl-4"> Daily Selection </p>
+          <span>🥛</span>
+          <p class="w-1/2 text-right text-[14px] font-semibold pr-4"> 8 RON / 80 gr </p>
         </div>
       </div>
       <div>
@@ -50,10 +51,16 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div class="flex flex-col items-center w-full text-center">
           <p class="font-bold text-[24px] text-center"> Allergens </p>
         </div>
-        <div>
-          <p class="font-semibold text-[16px]"> Contains milk  </p>
-          <p class="font-semibold text-[16px]"> Ice cream may contain allergens 
+        <div class="flex flex-col items-start pl-4 w-full">
+          <div class="flex flex-row items-start w-full gap-x-5">
+            <span class="bg-red-500">🥛</span>
+            <p class="font-semibold text-[16px]"> Contains milk  </p>
+          </div>
+          <div class="flex flex-row items-start w-full gap-x-5">
+            <span class="bg-red-500">🥛</span>
+            <p class="font-semibold text-[16px]"> Ice cream may contain allergens 
 depending on the flavor </p>
+          </div>
         </div>
       </div>
     </div>
