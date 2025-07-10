@@ -48,7 +48,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  background-image: url("BackgroundTileImage.png");
+  background-image: url("../BackgroundTileImage.png");
   background-size: 120% 70%;
   background-repeat: repeat;
   z-index: -2
@@ -88,7 +88,7 @@ body {
   width: 100%;
   height: 100%;
 
-  background-image: url("Fagyi.png");
+  background-image: url("../Fagyi.png");
   background-size: 140% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -104,7 +104,7 @@ body {
   padding: 0;
   height: 20vh;
   width: 100vw;
-  background-image: url("ChocolateTransTexture.png");
+  background-image: url("../ChocolateTransTexture.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 1

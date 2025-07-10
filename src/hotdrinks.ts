@@ -23,7 +23,7 @@ items.forEach(item => {
 
   if (item.milk === true) {
       const milk = document.createElement("img");
-      milk.src = "/milk-bottle.png"
+      milk.src = "QRMenuDolceSovata/milk-bottle.png"
       milk.alt = "milk";
       milk.className = "w-4 h-4";
       wrapper.appendChild(milk);
