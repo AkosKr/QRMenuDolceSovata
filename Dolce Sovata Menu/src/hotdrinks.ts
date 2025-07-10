@@ -9,7 +9,7 @@ const container = document.getElementById(containerId)!;
 
 items.forEach(item => {
   const wrapper = document.createElement("div");
-  wrapper.className = "flex flex-row w-full";
+  wrapper.className = "flex flex-row w-full items-center";
 
   const name = document.createElement("p");
   name.className = "w-1/2 text-left text-[16px] font-semibold pl-4";
@@ -22,8 +22,10 @@ items.forEach(item => {
   wrapper.appendChild(name);
 
   if (item.milk === true) {
-      const milk = document.createElement("span");
-      milk.textContent = "🥛";
+      const milk = document.createElement("img");
+      milk.src = "/milk-bottle.png"
+      milk.alt = "milk";
+      milk.className = "w-4 h-4";
       wrapper.appendChild(milk);
   } 
 
