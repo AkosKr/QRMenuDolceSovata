@@ -11,7 +11,7 @@
         <p class="font-bold text-[24px]"> Ice cream </p>
         <div class="flex flex-row w-full">
           <p class="w-1/2 text-left text-[16px] font-semibold pl-4"> Daily Selection </p>
-          <img src="QRMenuDolceSovata/ice-cream.png" alt="ice cream" class="w-5 h-5"/>
+          <img src="ice-cream.png" alt="ice cream" class="w-5 h-5"/>
           <p class="w-1/2 text-right text-[14px] font-semibold pr-4"> 8 RON / 80 gr </p>
         </div>
       </div>
@@ -49,11 +49,11 @@
         </div>
         <div class="flex flex-col items-start pl-4 w-full mt-4">
           <div class="flex flex-row items-start w-full gap-x-5">
-            <img src="QRMenuDolceSovata/milk-bottle.png" alt="milk" class="w-5 h-5"/>
+            <img src="milk-bottle.png" alt="milk" class="w-5 h-5"/>
             <p class="font-semibold text-[16px]"> Contains milk  </p>
           </div>
           <div class="flex flex-row items-start w-full gap-x-5">
-            <img src="QRMenuDolceSovata/ice-cream.png" alt="ice cream" class="w-5 h-5"/>
+            <img src="ice-cream.png" alt="ice cream" class="w-5 h-5"/>
             <p class="font-semibold text-[16px]"> Ice cream may contain allergens 
 depending on the flavor </p>
           </div>
