@@ -47,12 +47,55 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  background-image: url("TileBackground.jpg");
-  background-size: 150% 40%;
+  background-image: url("BackgroundTileImage.png");
+  background-size: 120% 70%;
   background-repeat: repeat;
-  z-index: -1
+  z-index: -2
+}
+/*
+.IceCreamFrame {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: felative;
+  z-index: 0
 }
 
+.IceCreamFrame::after {
+  content: "";
+  position:absolute;
+  background-image: url("Fagyi.png");
+  background-size: 120% 100%;
+  filter: opacity(0.6);
+  z-index: -1
+}*/
+
+.IceCreamFrame {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative; /* Needed to position ::after absolutely inside it */
+  z-index: 0; /* Make sure it's below the content */
+  overflow: hidden;
+}
+
+.IceCreamFrame::after {
+  content: ""; /* Required for pseudo-elements to appear */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("Fagyi.png");
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  display: block;
+  filter: opacity(0.5) saturate(1.2) brightness(0.9); /* Or use rgba in background for more control */
+  z-index: -1; /* Push behind content */
+}
 
 .TopChocolateTexture,
 .BottomChocolateTexture {

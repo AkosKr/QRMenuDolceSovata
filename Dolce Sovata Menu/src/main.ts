@@ -1,11 +1,12 @@
 import "./style.css";
-import { renderMenu } from './coffee.ts';
-import { renderDrinkMenu } from './drinks.ts';
-import { renderHotDrinkMenu } from './hotdrinks.ts';
+import { renderMenu } from "./coffee.ts";
+import { renderDrinkMenu } from "./drinks.ts";
+import { renderHotDrinkMenu } from "./hotdrinks.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div class='MainFrame'>
-    <div class='TopChocolateTexture'></div>
+    <div class='TopChocolateTexture'></div> 
+    <div class="IceCreamFrame">
     <div class='MainContentHolder'>
       <div class="flex flex-col items-center-safe min-h-20 ">
         <div class="separator w-full text-[40px]"> MENU </div>
@@ -64,6 +65,7 @@ depending on the flavor </p>
         </div>
       </div>
     </div>
+    </div>
     <div class='BottomChocolateTexture'></div>
   </div>
 `;
@@ -71,5 +73,3 @@ depending on the flavor </p>
 renderMenu("menu");
 renderDrinkMenu("drinkMenu");
 renderHotDrinkMenu("hotDrinkMenu");
-
-
